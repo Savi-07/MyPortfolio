@@ -1,0 +1,24 @@
+.projects-section {
+  max-width: 1000px;
+  margin: 3rem auto 2rem auto;
+  padding: 2rem 1rem;
+  /* background: #fff; */
+  border-radius: 12px;
+  /* box-shadow: 0 2px 12px rgba(0,0,0,0.03); */
+}
+
+.projects-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* font-style:oblique; */
+  /* color: #2d72d9; */
+}
+
+.projects-list {
+  /* background-color: black; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+} 
