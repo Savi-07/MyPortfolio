@@ -7,9 +7,9 @@ const Contact = () => {
     <section className="contact-section" id="contact">
       <h1 className="contact-header">LET'S GET CONNECTED</h1>
       <div className="contact-socials">
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-btn gh"><FaGithub size={32} /></a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="social-btn ln"><FaLinkedin size={32} /></a>
-        <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-btn ig"><FaInstagram size={32} /></a>
+        <a href="https://github.com/Savi-07" target="_blank" rel="noopener noreferrer" className="social-btn gh"><FaGithub size={32} /></a>
+        <a href="www.linkedin.com/in/sahil-kumar-singh-664549244" target="_blank" rel="noopener noreferrer" className="social-btn ln"><FaLinkedin size={32} /></a>
+        <a href="https://instagram.com/Sahilkumarsingh_07" target="_blank" rel="noopener noreferrer" className="social-btn ig"><FaInstagram size={32} /></a>
       </div>
       <div className="contact-form-wrapper">
         <h3 className="contact-prompt">Got a question, proposal, project, or want to work together on something?</h3>
