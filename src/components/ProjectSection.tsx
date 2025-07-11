@@ -21,7 +21,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ screenshot, description
       <div className={styles.descriptionBox}>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.description}>{description}</p>
-        <a href={demoLink} target="_blank" rel="noopener noreferrer" className={styles.demoLink}>demo link</a>
+        <a href={demoLink} target="_blank" rel="noopener noreferrer" className={styles.demoLink}>link</a>
       </div>
     </div>
   );

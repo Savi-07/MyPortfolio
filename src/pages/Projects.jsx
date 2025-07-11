@@ -16,15 +16,17 @@ const Projects = () => {
         <ProjectSection
           // logo={proj1Logo}
           screenshot={proj1SS}
-          title="Enroute Guardians"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nunc nisl eu nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nunc nisl eu nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nunc nisl eu nunc."
+          title="Enroute Guardian"
+          description='A smart accident detection and emergency alert system designed to improve road safety. The mobile app uses device sensors such as gyroscope & accelrometer to detect crashes and immediately notify emergency contacts with real-time location data(Geo Coordiantes).'
           demoLink="https://github.com/dummy/project1"
         />
         <ProjectSection
           // logo={proj2Logo}
           screenshot={proj2SS}
-          title="Project 2"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nunc nisl eu nunc."
+          title="Pardhi Admin App"
+          description='Paridhi Admin App was built to digitize and streamline the entire coordination process of Paridhi, our college’s annual tech fest with 1000+ participants.
+
+I led the development of the Flutter-based mobile app which enabled real-time management of events, participants, and volunteers—significantly reducing the manual effort and improving response time.'
           demoLink="https://github.com/dummy/project2"
         />
         <ProjectSection
