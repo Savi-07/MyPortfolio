@@ -1,21 +1,30 @@
 import React from 'react';
 import styles from './ProjectSection.module.css';
 
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 interface ProjectSectionProps {
-  logo: string;
-  screenshot: string;
+  logo?: string;
+  screenshots: string[];
   description: string;
   demoLink: string;
   title: string;
 }
 
-const ProjectSection: React.FC<ProjectSectionProps> = ({ screenshot, description, demoLink, title }) => {
+const ProjectSection: React.FC<ProjectSectionProps> = ({ screenshots, description, demoLink, title }) => {
   return (
     <div className={styles.container} >
-      {/* Logo and Screenshot */}
+      {/* Logo and Screenshot Carousel */}
       <div className={styles.logoScreenshot}>
         {/* <img src={logo} alt={title + ' logo'} className={styles.logo} /> */}
-        <img src={screenshot} alt={title + ' screenshot'} className={styles.screenshot} />
+        <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} className={styles.screenshot}>
+          {screenshots.map((src, idx) => (
+            <div key={idx}>
+              <img src={src} alt={title + ' screenshot ' + (idx + 1)} className={styles.screenshot} />
+            </div>
+          ))}
+        </Carousel>
       </div>
       {/* Description and Demo Link */}
       <div className={styles.descriptionBox}>
