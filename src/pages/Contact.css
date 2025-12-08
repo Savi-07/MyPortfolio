@@ -12,6 +12,21 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 2rem 1rem 0 1rem;
+    margin: 1.5rem auto;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 1.5rem 0.5rem 0 0.5rem;
+    margin: 1rem auto;
+  }
+}
+
 .contact-header {
   font-size: 4rem;
   font-weight: 600;
@@ -20,11 +35,48 @@
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .contact-header {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-header {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+}
+
 .contact-socials {
   display: flex;
   gap: 2rem;
   margin-bottom: 2.5rem;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .contact-socials {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-socials {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .social-btn {
@@ -36,28 +88,66 @@
   border-radius: 18px;
   background: #f9f9f9;
   border: 2px solid #222;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10), 0 2px 0 #bbb;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 0 2px 0 #bbb;
   font-size: 2rem;
   transition: transform 0.15s, box-shadow 0.15s;
   cursor: pointer;
 }
-.social-btn.gh { color: #222; }
-.social-btn.ln { color: #0077b5; }
-.social-btn.ig { color: #e1306c; }
+
+@media (max-width: 768px) {
+  .social-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 1px 0 #bbb;
+  }
+}
+.social-btn.gh {
+  color: #222;
+}
+.social-btn.ln {
+  color: #0077b5;
+}
+.social-btn.ig {
+  color: #e1306c;
+}
 .social-btn:hover {
   transform: scale(1.08) translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.18), 0 4px 0 #888;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), 0 4px 0 #888;
 }
 
 .contact-form-wrapper {
-  
- 
   width: 100%;
   max-width: 500px;
   margin: 0 auto 2.5rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .contact-form-wrapper {
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-wrapper {
+    margin: 0 auto 1.5rem auto;
+    padding: 0 0.5rem;
+    max-width: 100%;
+  }
 }
 .contact-prompt {
   margin-top: 4rem;
@@ -73,7 +163,22 @@
   width: 100%;
   gap: 0.5rem;
 }
-.contact-input, .contact-textarea {
+
+@media (max-width: 600px) {
+  .contact-form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    margin-top: 0.8rem;
+    gap: 0.4rem;
+  }
+}
+.contact-input,
+.contact-textarea {
   color: #222;
   flex: 1 1 0;
   border: 2px solid white;
@@ -86,10 +191,27 @@
   /* box-shadow: 0 2px 8px rgba(0,0,0,0.04); */
   resize: none;
 }
+
+@media (max-width: 600px) {
+  .contact-input,
+  .contact-textarea {
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-input,
+  .contact-textarea {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.95rem;
+    border-radius: 6px;
+  }
+}
 .contact-textarea {
-  
   flex: 1 1 0;
-/* 
+  /* 
   color: #000; */
   min-width: 0;
   max-width: 100%;
@@ -113,7 +235,7 @@
 }
 .contact-send-btn:hover {
   transform: scale(1.08) translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
   background: #e3eefd;
 }
 
@@ -127,6 +249,24 @@
   font-size: 1.1rem;
   margin-top: 2.5rem;
   color: #222;
+}
+
+@media (max-width: 768px) {
+  .contact-footer {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    padding: 1rem 0.5rem;
+    margin-top: 1.5rem;
+  }
 }
 .footer-left {
   text-align: left;
@@ -148,4 +288,4 @@
     font-size: 1rem;
     padding: 1rem 0.5rem;
   }
-} 
+}

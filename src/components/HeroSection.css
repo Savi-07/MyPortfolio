@@ -1,0 +1,15 @@
+.hero-title-stroke {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-title-stroke {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title-stroke {
+    margin-bottom: 0.5rem;
+  }
+}

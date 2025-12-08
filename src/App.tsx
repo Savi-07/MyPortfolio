@@ -1,17 +1,14 @@
-import { useEffect, useRef, useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-// @ts-ignore
-import Home from './pages/Home.jsx'
-// @ts-ignore
-import About from './pages/About.jsx'
-// @ts-ignore
-import Projects from './pages/Projects.jsx'
-// @ts-ignore
-import Contacts from './pages/Contact.jsx'
-import * as THREE from 'three'
-import HALO from 'vanta/dist/vanta.halo.min'
-import Loader from './components/Loader'
+import { useEffect, useRef, useState } from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import * as THREE from "three";
+import HALO from "vanta/dist/vanta.halo.min";
+import Loader from "./components/Loader";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+// import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
   const vantaRef = useRef(null);
@@ -31,19 +28,19 @@ function App() {
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
+        minHeight: 200.0,
+        minWidth: 200.0,
         baseColor: 0x2b4ee8,
         backgroundColor: 0x0,
-        amplitudeFactor: 3.00,
-        xOffset: 0.50,
+        amplitudeFactor: 3.0,
+        xOffset: 0.5,
         // yOffset: 0.25,
-        size: 3.00
+        size: 3.0,
       });
     }
     return () => {
       if (vantaEffect.current) {
-        // @ts-ignore
+        // @ts-expect-error Vanta library types are incomplete
         vantaEffect.current.destroy();
         vantaEffect.current = null;
       }
@@ -59,10 +56,11 @@ function App() {
       <Home />
       <About />
       <Projects />
-      <Contacts />
+      <Contact />
+
       {/* Add more sections/pages here as needed */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

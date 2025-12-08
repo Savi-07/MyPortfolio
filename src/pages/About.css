@@ -18,6 +18,34 @@
   z-index: 1;
 }
 
+@media (max-width: 1024px) {
+  .about-section {
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0.5rem;
+    border-radius: 8px;
+  }
+}
+
 .about-text-block {
   flex: 2;
   text-align: left;
@@ -33,10 +61,36 @@
   line-height: 1.1;
 }
 
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.5rem;
+  }
+}
+
 .about-description {
   margin-top: 2rem;
   font-size: 1.15rem;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .about-description {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-description {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
 }
 
 .about-card {
@@ -51,7 +105,22 @@
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    max-width: 90%;
+    padding: 1.5rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-card {
+    padding: 1rem 1rem;
+    border-radius: 12px;
+    gap: 1rem;
+  }
 }
 
 .about-img {
@@ -61,6 +130,21 @@
   border-radius: 12px;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .about-img {
+    width: 150px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-img {
+    width: 120px;
+    height: 100px;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .about-card-content {
@@ -73,9 +157,22 @@
   margin-bottom: 4px;
 }
 
+@media (max-width: 480px) {
+  .about-card-title {
+    font-size: 1rem;
+  }
+}
+
 .about-card-list {
   font-size: 1.05rem;
   margin-bottom: 12px;
+}
+
+@media (max-width: 480px) {
+  .about-card-list {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -88,4 +185,4 @@
   .about-card {
     margin: 0 auto;
   }
-} 
+}
